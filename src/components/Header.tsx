@@ -20,8 +20,12 @@ export default function Header({ navLinks = [] }: HeaderProps) {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="text-xl sm:text-2xl font-bold text-gradient">FREE</div>
-          <div className="text-xs sm:text-xs text-gray-600 dark:text-gray-400 font-medium">by Ma™</div>
+          <div className="text-xl sm:text-2xl font-bold text-gradient">
+            FREE
+          </div>
+          <div className="text-xs sm:text-xs text-gray-600 dark:text-gray-400 font-medium">
+            by Ma™
+          </div>
         </div>
 
         {/* Desktop Navigation Links */}

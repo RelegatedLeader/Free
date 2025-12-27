@@ -25,8 +25,12 @@ export default function FeatureCard({
       </div>
 
       {/* Content */}
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">{title}</h3>
-      <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">{description}</p>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+        {title}
+      </h3>
+      <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+        {description}
+      </p>
 
       {/* Arrow */}
       <div className="mt-4 flex items-center space-x-2 text-brand-600 dark:text-brand-400 opacity-0 group-hover:opacity-100 transition-opacity">

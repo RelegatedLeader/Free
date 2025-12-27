@@ -20,8 +20,12 @@ export default function DeviceShowcase({
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient">{title}</h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">{description}</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient">
+            {title}
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            {description}
+          </p>
         </div>
 
         {/* Devices Grid */}
@@ -36,7 +40,9 @@ export default function DeviceShowcase({
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-gradient transition-all">
                   {device.name}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm sm:text-base">{device.description}</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm sm:text-base">
+                  {device.description}
+                </p>
               </div>
 
               {/* Capabilities */}

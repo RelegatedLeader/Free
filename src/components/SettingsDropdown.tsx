@@ -7,11 +7,11 @@ export default function SettingsDropdown() {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  
+
   // Safe hook with mounted check
   let theme = "light" as const;
   let toggleTheme: () => void = () => {};
-  
+
   try {
     const themeContext = useTheme();
     theme = themeContext.theme;
@@ -112,9 +112,7 @@ export default function SettingsDropdown() {
                     {theme === "light" ? "Light Mode" : "Dark Mode"}
                   </p>
                   <p className="text-xs text-gray-500 dark:text-gray-400">
-                    {theme === "light"
-                      ? "Clean & bright"
-                      : "Easy on the eyes"}
+                    {theme === "light" ? "Clean & bright" : "Easy on the eyes"}
                   </p>
                 </div>
               </div>

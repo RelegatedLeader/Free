@@ -10,9 +10,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-lg sm:text-xl font-bold text-white">FREE by Ma™</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-white">
+              FREE by Ma™
+            </h3>
             <p className="text-gray-400 dark:text-gray-500 text-sm leading-relaxed">
-              Quantum-powered personal technology for therapy, growth, and self-understanding.
+              Quantum-powered personal technology for therapy, growth, and
+              self-understanding.
             </p>
           </div>
 
@@ -20,9 +23,30 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-white">Products</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">VR Therapy Headset</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Smart Tech Glasses</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Personal Dashboard</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  VR Therapy Headset
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Smart Tech Glasses
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Personal Dashboard
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -30,9 +54,30 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-white">Resources</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Research</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Research
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -40,9 +85,30 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold text-white">Legal</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Data Protection</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Data Protection
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -51,12 +117,28 @@ export default function Footer() {
         <div className="border-t border-gray-800 dark:border-gray-900 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
             <p className="text-gray-400 dark:text-gray-500 text-xs sm:text-sm">
-              © {currentYear} FREE by Ma™. All rights reserved. Built for freedom.
+              © {currentYear} FREE by Ma™. All rights reserved. Built for
+              freedom.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Twitter</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">LinkedIn</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Discord</a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors text-sm"
+              >
+                Twitter
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors text-sm"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors text-sm"
+              >
+                Discord
+              </a>
             </div>
           </div>
         </div>
