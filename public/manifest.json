@@ -1,0 +1,80 @@
+{
+  "name": "FREE by Ma™",
+  "short_name": "FREE",
+  "description": "Quantum-powered personal technology for therapy, growth, and self-understanding",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#a855f7",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["health", "productivity", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "View Devices",
+      "short_name": "Devices",
+      "description": "View all available devices",
+      "url": "/#devices",
+      "icons": [
+        {
+          "src": "/shortcut-icon.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Privacy Settings",
+      "short_name": "Privacy",
+      "description": "Manage your privacy settings",
+      "url": "/#privacy",
+      "icons": [
+        {
+          "src": "/shortcut-privacy.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
