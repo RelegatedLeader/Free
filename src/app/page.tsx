@@ -98,18 +98,18 @@ export default function Home() {
       />
 
       {/* Features Section */}
-      <section id="features" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient">
+      <section id="features" className="py-16 sm:py-24 bg-white dark:bg-gray-950 transition-colors duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient">
               Why FREE by Ma™
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Built with intention. Designed for freedom. Powered by quantum security.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature) => (
               <FeatureCard
                 key={feature.title}
@@ -131,32 +131,32 @@ export default function Home() {
       />
 
       {/* Privacy Section */}
-      <section id="privacy" className="py-24 bg-gradient-to-b from-white to-brand-50/30">
-        <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
-          <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient">
+      <section id="privacy" className="py-16 sm:py-24 bg-gradient-to-b from-white dark:from-gray-950 to-brand-50/30 dark:to-gray-900 transition-colors duration-300">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6 sm:space-y-8">
+          <div className="space-y-3 sm:space-y-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient">
               Your Data. Your Control.
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400">
               We believe in complete privacy and data ownership. Your personal data is never sold.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-10 sm:mt-12">
             <div className="space-y-4">
-              <div className="text-4xl">🔒</div>
-              <h3 className="text-xl font-bold">Quantum Encrypted</h3>
-              <p className="text-gray-600">Military-grade quantum encryption protects your data.</p>
+              <div className="text-3xl sm:text-4xl">🔒</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Quantum Encrypted</h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">Military-grade quantum encryption protects your data.</p>
             </div>
             <div className="space-y-4">
-              <div className="text-4xl">🗑️</div>
-              <h3 className="text-xl font-bold">Auto-Delete Option</h3>
-              <p className="text-gray-600">Data automatically deleted after each session unless saved.</p>
+              <div className="text-3xl sm:text-4xl">🗑️</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Auto-Delete Option</h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">Data automatically deleted after each session unless saved.</p>
             </div>
             <div className="space-y-4">
-              <div className="text-4xl">🙏</div>
-              <h3 className="text-xl font-bold">No Algorithm Control</h3>
-              <p className="text-gray-600">We don't manipulate your choices—you return by will.</p>
+              <div className="text-3xl sm:text-4xl">🙏</div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">No Algorithm Control</h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">We don't manipulate your choices—you return by will.</p>
             </div>
           </div>
         </div>

@@ -31,15 +31,24 @@ body {
   }
 
   .glass-effect {
-    @apply backdrop-blur-md bg-white/30 border border-white/20 rounded-2xl;
+    @apply backdrop-blur-md bg-white/30 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30 rounded-2xl;
   }
 
   .card-hover {
-    @apply hover:shadow-xl transition-smooth hover:scale-105;
+    @apply hover:shadow-xl transition-smooth hover:scale-105 dark:hover:shadow-2xl dark:hover:shadow-brand-500/20;
+  }
+
+  /* Dark mode gradient backgrounds */
+  .gradient-light-to-dark {
+    @apply bg-gradient-to-b from-white via-brand-50/30 to-white dark:from-gray-950 dark:via-gray-900 dark:to-gray-950;
+  }
+
+  .gradient-dark-bg {
+    @apply bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900;
   }
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Light mode */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -55,4 +64,18 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #9333ea;
+}
+
+/* Custom scrollbar - Dark mode */
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
 }

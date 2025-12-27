@@ -16,42 +16,42 @@ export default function DeviceShowcase({
   devices,
 }: DeviceShowcaseProps) {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-16 sm:py-24 gradient-dark-bg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient">{title}</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{description}</p>
+        <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient">{title}</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">{description}</p>
         </div>
 
         {/* Devices Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
           {devices.map((device) => (
             <div
               key={device.name}
-              className="glass-effect p-8 hover:shadow-xl transition-smooth group"
+              className="glass-effect p-6 sm:p-8 hover:shadow-xl dark:hover:shadow-brand-600/20 transition-smooth group"
             >
               {/* Device header */}
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-gradient transition-all">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-gradient transition-all">
                   {device.name}
                 </h3>
-                <p className="text-gray-600 mt-2">{device.description}</p>
+                <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm sm:text-base">{device.description}</p>
               </div>
 
               {/* Capabilities */}
               <div className="space-y-3">
-                <p className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                <p className="text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
                   Key Capabilities
                 </p>
                 <ul className="space-y-2">
                   {device.capabilities.map((capability) => (
                     <li
                       key={capability}
-                      className="flex items-center space-x-3 text-gray-700"
+                      className="flex items-center space-x-3 text-sm sm:text-base text-gray-700 dark:text-gray-300"
                     >
                       <svg
-                        className="w-5 h-5 text-brand-500"
+                        className="w-5 h-5 text-brand-500 dark:text-brand-400 flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -68,7 +68,7 @@ export default function DeviceShowcase({
               </div>
 
               {/* CTA */}
-              <button className="mt-8 w-full py-3 border-2 border-brand-600 text-brand-600 rounded-lg font-semibold hover:bg-brand-50 transition-smooth">
+              <button className="mt-8 w-full py-3 border-2 border-brand-600 dark:border-brand-500 text-brand-600 dark:text-brand-400 rounded-lg font-semibold hover:bg-brand-50 dark:hover:bg-gray-900 transition-smooth">
                 Explore Device
               </button>
             </div>
